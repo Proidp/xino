@@ -299,3 +299,18 @@
 [theme="light"] .header__navigationItem--logo img{
     filter: invert(1);
 }
+.only-visible-setting-page{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.visible-dark-light-option .only-visible-setting-page{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.visible-dark-light-option .not-visible-setting-page{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
