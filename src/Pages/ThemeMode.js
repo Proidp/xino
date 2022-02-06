@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 const ThemeMode = () => {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
   const [text, setText] = useLocalStorage("text" ? "Dark" : "Light");
-  const lightTheme = document.getElementById('theme_select')
-  const darkTheme = document.getElementById('dark')
+
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -16,15 +15,7 @@ const ThemeMode = () => {
     setText(newText);
   };
 
-  const selectMode = () =>{
-      if(lightTheme === 'light' || theme ==='light'){
-        setTheme('light');
-        console.log('light')
-      }else if(darkTheme === 'dark' || theme ==='dark'){
-        setTheme('light');
-        console.log('light')
-      }
-  }
+
 
   const [isActive, setActive] = useState("false");
 
