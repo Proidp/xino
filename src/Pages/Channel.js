@@ -4,6 +4,7 @@ import logo from './logo.png';
 import logo1 from '../xinotube_favicon.png';
 import Channelinner from '../Components/Channelinner';
 import AfterLogin from './AfterLogin';
+import ThemeMode from './ThemeMode';
 
 
 
@@ -28,6 +29,9 @@ const Channel = () => {
 
   return (
   <>
+  <div className='d-none'>
+     <ThemeMode/>
+  </div>
     <div className="main-wrapper">
     <header className="header">
             <div className="header__navigation">

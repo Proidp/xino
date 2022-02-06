@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Uploadinner from '../Components/Uploadinner';
+import ThemeMode from './ThemeMode';
 
 
 const Upload = () => {
@@ -10,6 +11,9 @@ const Upload = () => {
     }
   return (
       <>
+      <div className='d-none'>
+          <ThemeMode/>
+      </div>
       <div className='main-wrapper'>
         <header className="header">
             <div className="card__actions--between header__contents">

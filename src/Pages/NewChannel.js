@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import NewChannelinner from '../Components/NewChannelinner';
+import ThemeMode from './ThemeMode';
 
 
 
@@ -11,6 +12,9 @@ const NewChannel = () => {
     }
   return (
       <>
+      <div className='d-none'>
+        <ThemeMode/>
+       </div>
       <div className='main-wrapper'>
         <header className="header">
             <div className="card__actions--between header__contents">
