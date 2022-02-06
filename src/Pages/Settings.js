@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Setting from '../Components/Setting';
-import ThemeMode from './ThemeMode';
+
 
 
 const Settings = () => {
@@ -11,9 +11,7 @@ const Settings = () => {
     }
   return (
       <>
-      <div className="d-none">
-          <ThemeMode/>
-      </div>
+      
       <div className='main-wrapper'>
         <header className="header">
             <div className="card__actions--between header__contents">
