@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThemeMode from '../Pages/ThemeMode';
 
 
 const Setting = () => {
+
+
+
   return (
       <>
+      <div className="d-none">
+          
+      </div>
       <div className="sidebar--pusher--filepage">
         <main id="main-content" className="main card-stack main--settings-page">
             <div className="card-stack">
@@ -13,7 +20,7 @@ const Setting = () => {
             </div>
             <section className="card" id="appearance">
                 <div className="card__first-pane">
-                <div className="card__body card__body--no-title card__body--list">
+                <div className="card__body card__body--no-title card__body--list visible-dark-light-option">
                     <div className="card__main-actions settings__row section__actions--between">
                     <div className="settings__row--title">
                         <p>Homepage</p>
@@ -100,12 +107,12 @@ const Setting = () => {
                     <div className="settings__row--title">
                         <p>Theme</p>
                     </div>
-                    <div className="settings__row--value">
+                    {/* <div className="settings__row--value">
                         <fieldset-section>
                         <fieldset-section className="">
                             <select id="theme_select">
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
+                            <option id='light' value="light">Light</option>
+                            <option id='dark' value="dark">Dark</option>
                             </select>
                         </fieldset-section>
                         </fieldset-section>
@@ -115,7 +122,8 @@ const Setting = () => {
                             <label for="automatic_dark_mode">Automatic dark mode</label>
                         </div>
                         </fieldset-section>
-                    </div>
+                    </div> */}
+                    <ThemeMode/>
                     </div>
                     <div className="card__main-actions settings__row section__actions--between">
                     <div className="settings__row--title">
