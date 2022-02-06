@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
+import ThemeMode from './ThemeMode';
 
 const Login = () => {
   return (
       <>
+    <div className='d-none'>
+        <ThemeMode/>
+     </div>
       <div className='main-wrapper'>
       <header className="header header--minimal">
         <div className="header__navigation">
